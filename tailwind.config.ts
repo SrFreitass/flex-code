@@ -18,6 +18,7 @@ export default {
   			'presentation-title': 'var(--presentation-title)',
   			title: 'var(--title)',
         description: 'var(--description)',
+        'workflow-blue': 'var(--blue)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
