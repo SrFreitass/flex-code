@@ -6,7 +6,12 @@ export const Header = () => {
   return (
     <>
       <div className="bg-[#1326AB]">
-        <marquee className="p-3 text-center">
+        <p className="p-3 text-center max-[790px]:hidden">
+          Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
+          {' '}
+          <span className="text-[#FF6C37]">Read the report →</span>
+        </p>
+        <marquee className="p-3 min-[790px]:hidden">
           Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
           {' '}
           <span className="text-[#FF6C37]">Read the report →</span>
