@@ -14,7 +14,7 @@ export const Presentation = () => {
           </div>
           standard
         </h1>
-        <p className="text-lg text-[#6B6B6B] font-inter">
+        <p className="text-lg text-description font-inter">
           Flex Code connects you with top-tier Brazilian software engineers
         </p>
         <div className="flex gap-8 items-center">

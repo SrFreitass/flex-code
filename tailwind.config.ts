@@ -17,6 +17,7 @@ export default {
   			'button-bg': 'var(--button-bg)',
   			'presentation-title': 'var(--presentation-title)',
   			title: 'var(--title)',
+        description: 'var(--description)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -61,6 +62,7 @@ export default {
   			degular: 'var(--font-degular)',
   			'segoe-ui': 'var(--font-segoe-ui)',
         'onest': 'var(--font-onest)',
+        'inter': 'var(--font-inter)'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
