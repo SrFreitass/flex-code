@@ -4,6 +4,7 @@
 
 :root {
   --header-border: #E6E6E6;
+  --header-blue: #1326AB;
   --nav-links: #515151;
 
   --button-bg: #1A41E9;
@@ -14,6 +15,7 @@
   --description: #6B6B6B;
 
   --blue: #1E40AF;
+
 }
 
 body {

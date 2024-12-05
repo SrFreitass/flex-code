@@ -19,6 +19,7 @@ export default {
   			title: 'var(--title)',
         description: 'var(--description)',
         'workflow-blue': 'var(--blue)',
+        'header-blue': 'var(--header-blue)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

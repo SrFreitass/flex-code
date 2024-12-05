@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/button";
 export const Header = () => {
   return (
     <>
-      <div className="bg-[#1326AB]">
+      <div className="bg-header-blue">
         <p className="p-3 text-center max-[790px]:hidden text-white">
           Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
           {' '}
