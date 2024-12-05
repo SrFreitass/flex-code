@@ -16,7 +16,7 @@ const degularFont = localFont({
 });
 
 const interFont = Inter({
-  variable: "--font-manrope",
+  variable: "--font-inter",
   weight: ["400", "500", "600", "700"]
 });
 

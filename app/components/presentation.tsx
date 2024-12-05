@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { MoveRight } from "lucide-react"
-import { Button } from "./ui/button"
+import { Button } from "../../components/ui/button"
 
 export const Presentation = () => {
   return (
@@ -14,7 +14,7 @@ export const Presentation = () => {
           </div>
           standard
         </h1>
-        <p className="text-lg text-[#6B6B6B]">
+        <p className="text-lg text-[#6B6B6B] font-inter">
           Flex Code connects you with top-tier Brazilian software engineers
         </p>
         <div className="flex gap-8 items-center">
@@ -22,10 +22,10 @@ export const Presentation = () => {
             Get Started
             <MoveRight size={18}/>
           </Button>
-          <p className="underline text-[#212121]">Nossas vantagens</p>
+          <p className="underline text-title">Nossas vantagens</p>
         </div>
       </div>
-      <img src="/presentation-image.png" alt="" className="pt-14 absolute right-0"/>
+      <img src="/presentation-image.png" alt="" className="pt-14 absolute right-0 -z-10"/>
     </section>
   )
 }

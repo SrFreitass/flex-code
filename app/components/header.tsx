@@ -1,27 +1,27 @@
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Button } from "../../components/ui/button";
 
 export const Header = () => {
   return (
     <>
       <div className="bg-[#1326AB]">
-        <p className="p-3 text-center max-[790px]:hidden">
+        <p className="p-3 text-center max-[790px]:hidden text-white">
           Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
           {' '}
           <span className="text-[#FF6C37]">Read the report →</span>
         </p>
-        <marquee className="p-3 min-[790px]:hidden">
+        <marquee className="p-3 text-white min-[790px]:hidden">
           Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
           {' '}
           <span className="text-[#FF6C37]">Read the report →</span>
         </marquee>
       </div>
-      <header className="border-b border-header-border max-[790px]:hidden">
+      <header className="border-b border-header-border max-[790px]:hidden font-manrope">
         <div className="max-w-[1440px] py-5 px-20  m-auto flex items-center">
           <Image src="/logo/flex-code.png" alt="Flex Code Logo" width={80} height={80} />
           <nav className="ml-[5.75rem] w-full flex items-center justify-between max-[900px]:ml-4">
-            <ul className="flex gap-6 text-nav-links">
+            <ul className="flex gap-6 text-nav-links font-medium">
               <li>Flex Code</li>
               <li>Solutions</li>
               <li>Why Trust Us</li>
