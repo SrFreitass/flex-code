@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Fustat, Inter, Manrope, Onest } from 'next/font/google';
 import localFont from "next/font/local";
+import { Header } from "./components/header";
 import "./globals.css";
 
 const manropeFont = Manrope({
   variable: "--font-manrope",
-  weight: ["500", "600"]
+  weight: ["400", "500", "600", "700", "800"]
 });
 
 const degularFont = localFont({
@@ -60,6 +61,7 @@ export default function RootLayout({
           antialiased
         `}
       >
+        <Header/>
         {children}
       </body>
     </html>

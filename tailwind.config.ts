@@ -11,7 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'header-border': "var(--header-border)",
+        'nav-links': "var(--nav-links)",
+        'button-bg': "var(--button-bg)",
       },
+      fontFamily: {
+        manrope: "var(--font-manrope)"
+      }
     },
   },
   plugins: [],
