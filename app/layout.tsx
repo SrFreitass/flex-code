@@ -10,7 +10,7 @@ const manropeFont = Manrope({
 });
 
 const degularFont = localFont({
-  src: "./fonts/Degular-Semibold.woff2",
+  src: "./fonts/Degular.woff",
   weight: "600",
   variable: "--font-degular",
 });

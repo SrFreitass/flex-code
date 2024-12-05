@@ -18,7 +18,7 @@ export const Header = () => {
         </marquee>
       </div>
       <header className="border-b border-header-border max-[790px]:hidden">
-        <div className="max-w-[1289px] px-[2.5rem] py-5 m-auto flex items-center">
+        <div className="max-w-[1440px] py-5 px-20  m-auto flex items-center">
           <Image src="/logo/flex-code.png" alt="Flex Code Logo" width={80} height={80} />
           <nav className="ml-[5.75rem] w-full flex items-center justify-between max-[900px]:ml-4">
             <ul className="flex gap-6 text-nav-links">

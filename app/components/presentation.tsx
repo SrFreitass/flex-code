@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { MoveRight } from "lucide-react"
 import { Button } from "./ui/button"
 
@@ -5,7 +6,7 @@ export const Presentation = () => {
   return (
     <section className="w-full flex justify-between">
       <div className="flex flex-col gap-8">
-        <h1 className="text-8xl font-semibold text-presentation-title pt-28">
+        <h1 className="text-8xl font-semibold font-degular text-presentation-title pt-28">
           Dimension is
           <br />
           <div className="flex items-center gap-6">
@@ -24,7 +25,7 @@ export const Presentation = () => {
           <p className="underline text-[#212121]">Nossas vantagens</p>
         </div>
       </div>
-      <img src="/presentation-image.png" alt="" className="pt-14 absolute right-1"/>
+      <img src="/presentation-image.png" alt="" className="pt-14 absolute right-0"/>
     </section>
   )
 }
