@@ -1,6 +1,6 @@
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 
 export const Header = () => {
   return (

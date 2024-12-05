@@ -14,9 +14,12 @@ export default {
         'header-border': "var(--header-border)",
         'nav-links': "var(--nav-links)",
         'button-bg': "var(--button-bg)",
+
+        'presentation-title': "var(--presentation-title)",
       },
       fontFamily: {
-        manrope: "var(--font-manrope)"
+        manrope: "var(--font-manrope)",
+        degular: "var(--font-degular)"
       }
     },
   },

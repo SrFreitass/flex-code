@@ -9,6 +9,8 @@
   --nav-links: #515151;
 
   --button-bg: #1A41E9;
+
+  --presentation-title: #20262A;
 }
 
 @media (prefers-color-scheme: dark) {
