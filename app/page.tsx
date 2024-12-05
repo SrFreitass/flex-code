@@ -1,4 +1,5 @@
 import { AboutMore } from "./components/AboutMore";
+import { Companies } from "./components/Companies";
 import { Presentation } from "./components/Presentation";
 import { WhyChooseUs } from "./components/WhyChooseUs";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Presentation/>
       <AboutMore/>
       <WhyChooseUs/>
+      <Companies/>
     </div>
   );
 }
