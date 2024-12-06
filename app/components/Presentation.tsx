@@ -33,7 +33,7 @@ export const Presentation = () => {
         </div>
       </div>
       <img src="/presentation-image.png" alt="" 
-      className="pt-14 absolute right-0 -z-10 max-[1350px]:scale-90 max-[1350px]:-right-20 max-[1190px]:scale-[.8] max-[1190px]:top-20 max-lg:hidden"/>
+      className="pt-14 absolute right-0 -z-10 max-[1350px]:scale-90 max-[1350px]:-right-8 max-[1190px]:scale-[.8] max-[1190px]:-right-[4.3rem] max-[1190px]:top-20 max-lg:hidden"/>
     </section>
   )
 }

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+  border: 1px solid red;
+} */
+
 :root {
   --header-border: #E6E6E6;
   --header-blue: #1326AB;

@@ -5,9 +5,9 @@ export const AboutMore = ( ) => {
     return (
         <section className="mt-40 border-b border-header-border pb-[5.5rem]">
             <div className="flex flex-col gap-4">
-                <h2 className="font-segoe-ui font-semibold text-title text-3xl">Speed up API development through team<br/>
+                <h2 className="font-segoe-ui font-semibold text-title text-3xl max-sm:text-center">Speed up API development through team<br/>
                 collaboration</h2>
-                <p className="font-inter text-title w-2/3 max-lg:w-full">Prototype, document, test, and demo all your APIs in one place. Get early feedback by having
+                <p className="font-inter text-title w-2/3 max-lg:w-full max-sm:text-center">Prototype, document, test, and demo all your APIs in one place. Get early feedback by having
                 conversations in the context of any API—private, public, or partner—not across scattered across tools.</p>
                 <div className="flex gap-12">
                     <Image
