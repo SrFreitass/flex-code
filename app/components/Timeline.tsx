@@ -40,7 +40,7 @@ export function Timeline({ progress }: TimelineProps) {
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4">
+    <div className="max-w-2xl mx-auto px-4 max-lg:mx-0 max-lg:mt-6">
       {timelineItems.map((item, index) => (
         <TimelineItem
           icon={item.icon}

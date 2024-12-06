@@ -9,6 +9,11 @@ export default {
   ],
   theme: {
   	extend: {
+		gridTemplateColumns: {
+			'why-choose': 'repeat(2, minmax(19rem, 19rem))',
+			'why-choose-sm': 'repeat(1, minmax(18rem, 18rem))'
+		},
+
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
