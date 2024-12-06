@@ -12,7 +12,7 @@ export const Carousel = () => {
             setCurrentSlide(0);
             return;
         }
-        
+
         setCurrentSlide(currentSlide + 1);
     }
 
@@ -25,7 +25,7 @@ export const Carousel = () => {
     })
 
     return (
-        <div className="mt-6 flex flex-col items-center justify-start w-1/2">
+        <div className="mt-6 flex flex-col items-center justify-start w-1/2  max-lg:hidden">
             <Image src={slides[currentSlide]} alt="" width={759} height={878} className="h-full rounded-xl object-cover max-h-[42rem]" />
             <div className="flex flex-col gap-4 items-center relative bottom-56">
                 <h2 className="text-[2.5rem] text-white text-center font-semibold font-degular w-2/3">Empowering Innovation, Shaping the Future</h2>
