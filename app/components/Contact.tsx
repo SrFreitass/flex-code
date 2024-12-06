@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import CodeEditor from "@/components/ui/codeEditor"
 import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
 
 export const Contact = () => {
   return (
@@ -17,6 +18,7 @@ export const Contact = () => {
           <Input label="First name*"/>
           <Input label="Phone"/>
           <Input label="Work email*"/>
+          <Textarea label="Project Size"/>
           <Button className="bg-white !text-presentation-title !font-inter font-semibold">Contact Sales</Button>
         </form>
       </div>

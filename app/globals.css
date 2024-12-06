@@ -86,3 +86,15 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.translucent-gradient {
+  filter: drop-shadow(0px 0px 4px rgba(200, 200, 200, 0.05));
+  background: linear-gradient(
+    360deg,
+    rgba(180, 180, 180, 0.15) 20%,
+    rgba(211, 211, 211, 0.10) 20%,
+    rgba(180, 180, 180, 0.05) 20%,
+    rgba(180, 180, 180, 0.15) 20%
+  );
+  backdrop-filter: blur(5px);
+}
