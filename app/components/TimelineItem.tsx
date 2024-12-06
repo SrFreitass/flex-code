@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { FC } from 'react';
+import { ReactSVG } from 'react-svg';
 
 interface TimelineItemProps {
   title: string;
@@ -14,11 +14,11 @@ export const TimelineItem: FC<TimelineItemProps> = ({ title, description, icon, 
     <div className="relative flex gap-4">
       <div className="flex flex-col items-center">
         <div className={`p-2 border-2 border-blue-500 transition-colors rounded-full ${isActive ? 'bg-blue-500' : ''}`}>
-          <Image
+          <ReactSVG
             src={icon}
-            alt=""
             width={20}
             height={20}
+            className={`${isActive ? 'to-white' : ''} transition-colors`}
           />
         </div>
         {/* <Circle 
@@ -27,8 +27,8 @@ export const TimelineItem: FC<TimelineItemProps> = ({ title, description, icon, 
           }`} 
         /> */}
         {!isLast && (
-          <div className={`w-0.5 h-full transition-colors duration-300 ${
-            isActive ? 'bg-blue-500' : 'bg-gray-200'
+          <div className={`w-0.5 h-24 transition-colors duration-300 relative lg:hidden border-r-2 border-dotted ${
+            isActive ? ' border-blue-500' : 'border-gray-200'
           }`} />
         )}
       </div>

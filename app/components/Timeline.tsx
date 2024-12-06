@@ -16,16 +16,6 @@ const timelineItems = [
     title: 'Front-End Development',
     description: 'Convert the design into functional user-facing code.',
   },
-  {
-    icon: '/icons/workflow-4.svg',
-    title: 'Testing and Debugging',
-    description: 'Identify and fix bugs to ensure performance and usability.',
-  },
-  {
-    icon: '/icons/workflow-5.svg',
-    title: 'Launch and Maintenance',
-    description: 'Deploy the site and monitor for updates and improvements.',
-  },
 ];
 
 interface TimelineProps {
@@ -34,13 +24,13 @@ interface TimelineProps {
 
 export function Timeline({ progress }: TimelineProps) {
   const getIsActive = (index: number) => {
-    const zoneSize = 95 / timelineItems.length;
-    const itemThreshold = (index * zoneSize) + 5;
+    const zoneSize = 90 / timelineItems.length;
+    const itemThreshold = (index * zoneSize) + 10;
     return progress >= itemThreshold;
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4 max-lg:mx-0 max-lg:mt-6">
+    <div className="mx-auto px-4 flex gap-8 max-lg:mx-0 max-lg:mt-6 max-lg:flex-col max-lg:gap-0">
       {timelineItems.map((item, index) => (
         <TimelineItem
           icon={item.icon}
