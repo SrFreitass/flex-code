@@ -9,7 +9,7 @@ export const Contact = () => {
       <div className="max-w-[1440px] m-auto px-20 flex gap-8">
         <div className="flex flex-col gap-8 w-[57%]">
           <h2 className="font-segoe-ui font-semibold text-[2.5rem]">Ready to get Started?</h2>
-          <p className="font-inter">We're here to help. Set up a time to see how  can take <br/>
+          <p className="font-inter">We&#39;re here to help. Set up a time to see how  can take <br/>
           your APIs to the next level.</p>
           <CodeEditor/>
         </div>
