@@ -11,11 +11,13 @@ export const Header = () => {
           {' '}
           <span className="text-[#FF6C37]">Read the report →</span>
         </p>
-        <marquee className="p-3 text-white min-[790px]:hidden">
-          Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
-          {' '}
-          <span className="text-[#FF6C37]">Read the report →</span>
-        </marquee>
+        <div className="p-3 text-white min-[790px]:hidden overflow-hidden whitespace-nowrap">
+          <div className="inline-block animate-marquee">
+            Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
+            {' '}
+            <span className="text-[#FF6C37]">Read the report →</span>
+          </div>
+        </div>
       </div>
       <header className="border-b border-header-border max-[790px]:hidden font-manrope">
         <div className="max-w-[1440px] py-5 px-20  m-auto flex items-center">
