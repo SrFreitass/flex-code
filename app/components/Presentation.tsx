@@ -1,13 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
-import { MoveRight } from "lucide-react"
-import Image from "next/image"
-import { Button } from "../../components/ui/button"
+import * as motion from 'framer-motion/client';
+import { MoveRight } from "lucide-react";
+import Image from "next/image";
+import { Button } from "../../components/ui/button";
 
 export const Presentation = () => {
   return (
     <section className="w-full flex justify-between">
-      <div className="flex flex-col gap-8">
-        <h1 className="text-8xl font-semibold font-degular text-presentation-title pt-28 max-2xl:text-7xl max-[1190px]:text-6xl max-lg:text-7xl max-md:text-center max-sm:text-6xl">
+      <motion.div className="flex flex-col gap-8"
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+        variants={{
+        hidden: { opacity: 0, x: -20 },
+        visible: { opacity: 1, x: 0 },
+        }}
+      >
+        <h1
+          className="text-8xl font-semibold font-degular text-presentation-title pt-28 max-2xl:text-7xl max-[1190px]:text-6xl max-lg:text-7xl max-md:text-center max-sm:text-6xl"
+        >
           Dimensi
           <Image src="/avatar-1.png" alt="" width={30} height={30} className="inline-block relative bottom-1 md:hidden"/>
           <span className="hidden md:inline-block">o</span>
@@ -31,8 +42,8 @@ export const Presentation = () => {
           </Button>
           <p className="underline text-title max-md:hidden">Nossas vantagens</p>
         </div>
-      </div>
-      <img src="/presentation-image.png" alt="" 
+      </motion.div>
+      <img src="/presentation-image.png" alt=""
       className="pt-14 absolute right-0 -z-10 max-[1350px]:scale-90 max-[1350px]:-right-8 max-[1190px]:scale-[.8] max-[1190px]:-right-[4.3rem] max-[1190px]:top-20 max-lg:hidden"/>
     </section>
   )

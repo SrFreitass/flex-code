@@ -19,7 +19,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-      <header className="border-b border-header-border max-[900px]:hidden font-manrope">
+      <header className="border-b border-header-border max-[900px]:hidden font-degular">
         <div className="max-w-[1440px] py-5 px-20  m-auto flex items-center">
           <Image src="/logo/flex-code.png" alt="Flex Code Logo" width={80} height={80} />
           <nav className="ml-[5.75rem] w-full flex items-center justify-between max-lg:ml-4">
