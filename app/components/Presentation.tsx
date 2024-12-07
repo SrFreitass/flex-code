@@ -26,7 +26,7 @@ export const Presentation = () => {
           <br />
           <div className="flex items-center gap-6 max-md:gap-0 max-md:block">
             <Image src="/avatar-2.png" alt="" width={36} height={36} className="inline-block relative bottom-2 md:hidden"/>
-            new <img src="/avatars.png" alt="" className="mt-4 max-md:hidden"/>
+            new <Image src="/avatars.png" alt="" className="mt-4 max-md:hidden" width={100} height={32} unoptimized/>
           </div>
           standard
           <Image src="/avatar-3.png" alt="" width={36} height={36} className="inline-block relative bottom-2 md:hidden"/>
@@ -55,7 +55,7 @@ export const Presentation = () => {
           </div>
         </div>
       </motion.div>
-      <img src="/presentation-image.png" alt=""
+      <Image unoptimized src="/presentation-image.png" width={680} height={982} alt=""
       className="pt-14 absolute right-0 -z-10 max-[1350px]:scale-90 max-[1350px]:-right-8 max-[1190px]:scale-[.8] max-[1190px]:-right-[4.3rem] max-[1190px]:top-20 max-lg:hidden"/>
     </section>
   )

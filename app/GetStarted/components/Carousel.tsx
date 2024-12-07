@@ -1,9 +1,16 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Carousel = () => {
     const slides = [
-        "/slide-1.png"
+        "/slide-1.png",
+        "/slide-2.png",
+        "/slide-3.png",
     ];
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -26,15 +33,21 @@ export const Carousel = () => {
 
     return (
         <div className="mt-6 flex flex-col items-center justify-start w-1/2  max-lg:hidden">
-            <Image src={slides[currentSlide]} alt="" width={759} height={878} className="h-full rounded-xl object-cover max-h-[42rem]" />
-            <div className="flex flex-col gap-4 items-center relative bottom-56">
-                <h2 className="text-[2.5rem] text-white text-center font-semibold font-degular w-2/3">Empowering Innovation, Shaping the Future</h2>
-                <div className="flex gap-2">
-                    {slides.map((_, i) => (
-                        <div key={i} className={`w-16 h-[2px] rounded-xl transition-colors ${currentSlide === i ? 'bg-blue-500' : 'bg-white'}`}></div>
-                    ))}
-                </div>
-            </div>
+            <Swiper 
+                spaceBetween={50}
+                slidesPerView={1}
+                className="w-full max-h-[42rem] rounded-xl"
+            >
+                {slides.map((slide, i) => (
+                    <SwiperSlide key={i} className={`flex items-center justify-center`}>
+                        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-xl" />
+                        <h2 className="absolute text-white bottom-10 font-degular text-4xl text-center px-20 flex justify-center">
+                        Empowering Innovation, Shaping the Future
+                        </h2>
+                        <Image src={slide} alt="" width={759} height={878} className="h-full rounded-xl object-cover max-h-[42rem]" />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </div>
     )
 }
