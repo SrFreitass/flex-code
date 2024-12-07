@@ -1,7 +1,7 @@
 "use client"
 
 import * as AccordionPrimitive from "@radix-ui/react-accordion"
-import { PlusIcon } from "lucide-react"
+import { MinusIcon, PlusIcon } from "lucide-react"
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
@@ -23,8 +23,10 @@ AccordionItem.displayName = "AccordionItem"
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <AccordionPrimitive.Header className="flex">
+>(({ className, children, ...props }, ref) => {
+  const [open, setOpen] = React.useState(false);
+
+  return <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
@@ -32,12 +34,16 @@ const AccordionTrigger = React.forwardRef<
         className
       )}
       {...props}
+      onClick={() => setOpen(!open)}
     >
       {children}
-      <PlusIcon className="h-7 w-7 shrink-0 transition-transform duration-200"  color="#333"/>
+      {open ? <MinusIcon className="h-7 w-7 shrink-0 transition-transform duration-200"  color="#333"/> 
+            : <PlusIcon className="h-7 w-7 shrink-0 transition-transform duration-200"  color="#333"/>
+      }
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
-))
+})
+
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 
 const AccordionContent = React.forwardRef<

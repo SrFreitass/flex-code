@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssanimate from "tailwindcss-animate";
 
 export default {
     darkMode: ["class"],
@@ -22,9 +23,9 @@ export default {
   			'button-bg': 'var(--button-bg)',
   			'presentation-title': 'var(--presentation-title)',
   			title: 'var(--title)',
-        description: 'var(--description)',
-        'workflow-blue': 'var(--blue)',
-        'header-blue': 'var(--header-blue)',
+			description: 'var(--description)',
+			'workflow-blue': 'var(--blue)',
+			'header-blue': 'var(--header-blue)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -101,5 +102,5 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssanimate],
 } satisfies Config;
