@@ -5,7 +5,7 @@ export const Solutions = ( ) => {
     return (
         <section id="solutions" className="mt-40 border-b border-header-border pb-[5.5rem] flex flex-row justify-between max-lg:flex-col">
             <div className="w-[40%] flex flex-col gap-8 max-lg:w-full">
-              <h2 className="text-5xl font-degular font-semibold">Simplify Your Requests with Flex Code</h2>
+              <h2 className="text-5xl font-degular font-semibold max-xl:text-5xl max-lg:w-full max-lg:text-center max-[786px]:text-4xl">Simplify Your Requests with Flex Code</h2>
               <p>Let us handle your projects with speed and precision. Our team is dedicated to turning your needs into effective solutions, delivering results that exceed expectations.</p>
               <Button className="border-title border bg-transparent w-44 rounded-[50px] !text-title max-lg:hidden">
                 More questions
