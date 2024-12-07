@@ -1,13 +1,17 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Button } from "@/components/ui/button"
 
 export const Solutions = ( ) => {
     return (
-        <section id="solutions" className="mt-40 border-b border-header-border pb-[5.5rem] flex flex-row justify-between">
-            <div className="w-[40%]">
+        <section id="solutions" className="mt-40 border-b border-header-border pb-[5.5rem] flex flex-row justify-between max-lg:flex-col">
+            <div className="w-[40%] flex flex-col gap-8 max-lg:w-full">
               <h2 className="text-5xl font-degular font-semibold">Simplify Your Requests with Flex Code</h2>
               <p>Let us handle your projects with speed and precision. Our team is dedicated to turning your needs into effective solutions, delivering results that exceed expectations.</p>
+              <Button className="border-title border bg-transparent w-44 rounded-[50px] !text-title max-lg:hidden">
+                More questions
+              </Button>
             </div>
-            <div className="font-degular text-title w-[55%] max-lg:w-full">
+            <div className="font-degular text-title w-[55%] max-lg:w-full max-lg:mt-6">
                 <Accordion type="multiple">
                     <AccordionItem value="1">
                         <AccordionTrigger className="text-2xl font-medium border-t">Tailored Service</AccordionTrigger>
