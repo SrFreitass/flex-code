@@ -24,11 +24,11 @@ export const Header = () => {
           <Image src="/logo/flex-code.png" alt="Flex Code Logo" width={80} height={80} />
           <nav className="ml-[5.75rem] w-full flex items-center justify-between max-lg:ml-4">
             <ul className="flex gap-6 text-nav-links font-medium">
-              <li>Flex Code</li>
-              <li>Solutions</li>
-              <li>Why Trust Us</li>
-              <li>Clients</li>
-              <li>Support</li>
+              <li><a >Flex Code</a></li>
+              <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#why-choose-us">Why Trust Us</a></li>
+              <li><a href="#clients">Clients</a></li>
+              <li><a href="#support">Support</a></li>
             </ul>
             <Button className="font-semibold flex items-center gap-1">
               Get Started

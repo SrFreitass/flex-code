@@ -2,7 +2,7 @@ import { Benefit } from "./Benefit"
 
 export const WhyChooseUs = () => {
   return (
-    <section className="mt-20 border-b border-header-border pb-14">
+    <section id="why-choose-us" className="mt-20 border-b border-header-border pb-14">
       <div className="flex flex-col gap-8 items-center justify-center">
         <h2 className="font-degular font-semibold text-5xl text-presentation-title text-center">Why Choose Flex Code</h2>
         <p className="font-inter text-center text-description">Flex Code connects you with top-tier Brazilian software engineers to supercharge your development needs.</p>

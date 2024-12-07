@@ -1,9 +1,9 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Image from "next/image"
 
-export const AboutMore = ( ) => {
+export const Solutions = ( ) => {
     return (
-        <section className="mt-40 border-b border-header-border pb-[5.5rem]">
+        <section id="solutions" className="mt-40 border-b border-header-border pb-[5.5rem]">
             <div className="flex flex-col gap-4">
                 <h2 className="font-degular font-semibold text-title text-3xl max-sm:text-center">Speed up API development through team<br/>
                 collaboration</h2>

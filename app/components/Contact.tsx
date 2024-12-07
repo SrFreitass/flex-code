@@ -6,7 +6,7 @@ import { MoveRight } from "lucide-react"
 
 export const Contact = () => {
   return (
-    <section className="mt-16 text-white bg-header-blue py-14">
+    <section id="support"  className="mt-16 text-white bg-header-blue py-14">
       <div className="max-w-[1440px] m-auto px-20 flex max-[1200px]:flex-col max-sm:px-4 gap-8 max-[450px]:h-[25rem] min-[1200px]:!bg-none" style={{ background: 'url(/footer-bg.png)' }}>
         <div className="flex flex-col gap-8 w-[57%] max-[1200px]:w-full max-[450px]:text-center">
           <h2 className="font-degular font-semibold text-[2.5rem]">Ready to get Started?</h2>

@@ -1,8 +1,8 @@
-import { AboutMore } from "./components/AboutMore";
-import { Companies } from "./components/Companies";
+import { Clients } from "./components/Clients";
 import { Contact } from "./components/Contact";
 import { MarqueeScrollBased } from "./components/MarqueeScrollBased";
 import { Presentation } from "./components/Presentation";
+import { Solutions } from "./components/Solutions";
 import { WhyChooseUs } from "./components/WhyChooseUs";
 import { Workflow } from './components/Workflow';
 
@@ -11,9 +11,9 @@ export default function Home() {
     <>
     <div className="max-w-[1440px] m-auto px-20 max-sm:px-4">
       <Presentation />
-      <AboutMore />
+      <Solutions />
       <WhyChooseUs />
-      <Companies />
+      <Clients />
       <Workflow />
     </div>
     <MarqueeScrollBased/>

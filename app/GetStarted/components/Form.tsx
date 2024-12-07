@@ -12,9 +12,9 @@ export const Form = () => {
                 <p className="text-title">Thank you for choosing Flex Code! We’d like to ask a few questions to gain a deeper understanding of your software development requirements.</p>
             </div>
             <div className="flex flex-col items-start gap-6 w-full">
-                <Input className="focus:outline-blue-500" label="Your name" required />
-                <Input className="focus:outline-blue-500" label="Your work email" type="email" required/>
-                <Textarea className="focus:outline-blue-500" label="How can we help?" required/>
+                <Input label="Your name" required />
+                <Input label="Your work email" type="email" required/>
+                <Textarea label="How can we help?" required/>
                 <Button className="flex items-center gap-2">
                     Get Started
                     <MoveRight size={18}/>

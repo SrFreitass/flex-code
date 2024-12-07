@@ -6,6 +6,11 @@
   border: 1px solid red;
 } */
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
 :root {
   --header-border: #E6E6E6;
   --header-blue: #1326AB;
