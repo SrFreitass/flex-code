@@ -42,6 +42,18 @@ export const Presentation = () => {
           </Button>
           <p className="underline text-title max-md:hidden">Nossas vantagens</p>
         </div>
+
+        <div className='flex gap-16 items-center mt-6  max-[1280px]:gap-4'>
+          <p className='font-degular w-40'>
+            Trusted by the world&#39;s biggest brands
+          </p>
+
+          <div className="flex items-center gap-6">
+            <Image src="/logo/afterpay-logo.png" alt="" width={100} height={100}/>
+            <Image src="/logo/basecamp-logo.png" alt="" width={100} height={100}/>
+            <Image src="/logo/maze-logo.png" alt="" width={100} height={100}/>
+          </div>
+        </div>
       </motion.div>
       <img src="/presentation-image.png" alt=""
       className="pt-14 absolute right-0 -z-10 max-[1350px]:scale-90 max-[1350px]:-right-8 max-[1190px]:scale-[.8] max-[1190px]:-right-[4.3rem] max-[1190px]:top-20 max-lg:hidden"/>

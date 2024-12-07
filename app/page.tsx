@@ -1,3 +1,4 @@
+import { AboutMore } from "./components/AboutMore";
 import { Clients } from "./components/Clients";
 import { Contact } from "./components/Contact";
 import { MarqueeScrollBased } from "./components/MarqueeScrollBased";
@@ -11,9 +12,10 @@ export default function Home() {
     <>
     <div className="max-w-[1440px] m-auto px-20 max-sm:px-4">
       <Presentation />
-      <Solutions />
-      <WhyChooseUs />
       <Clients />
+      <AboutMore/>
+      <WhyChooseUs />
+      <Solutions />
       <Workflow />
     </div>
     <MarqueeScrollBased/>

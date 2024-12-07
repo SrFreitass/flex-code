@@ -2,18 +2,20 @@ import Image from "next/image"
 
 export const Clients = () => {
   return (
-    <section id="clients" className="mt-20 flex flex-col gap-14 font-degular">
-      <h2 className="font-semibold text-3xl w-3/5 max-lg:w-full">Trusted by over 500,000 companies, 35 million
-      developers, and 98% of the Fortune 500</h2>
-      <div className="flex items-center justify-center flex-wrap gap-6">
+    <section id="clients" className="mt-20 flex items-center justify-center gap-14 font-degular py-20">
+      <h2 className="font-semibold text-3xl w-1/4 text-[#687580]">
+        Trusted by the world&#39;s biggest brands
+      </h2>
+      <div className="flex items-center justify-center flex-wrap gap-10 w-80">
         {
-          new Array(24).fill(0).map((_, i) => (
+          new Array(4).fill(0).map((_, i) => (
             <Image
               key={i}
               alt="Company Logo"
-              src={"/logo/Link-3.svg"}
-              width={80}
-              height={80}
+              src={"/logo/adobe-logo.svg"}
+              width={128}
+              height={128}
+              className="transition-all grayscale-[80] hover:grayscale-0"
             />
           ))
         }
