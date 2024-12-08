@@ -5,11 +5,9 @@ interface TimelineItemProps {
   title: string;
   description: string;
   icon: string;
-  isActive: boolean;
-  isLast?: boolean;
 }
 
-export const TimelineItem: FC<TimelineItemProps> = ({ title, description, icon, isActive, isLast = false }) => {
+export const TimelineItem: FC<TimelineItemProps> = ({ title, description, icon }) => {
   return (
     <div className="relative flex gap-4 group">
       <div className="flex flex-col items-center">
