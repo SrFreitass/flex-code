@@ -6,12 +6,14 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
 import { Button } from "../../components/ui/button";
+import { Clients } from './Clients';
+import { InfoCards } from './InfoCards';
 
 export const Presentation = () => {
   const router = useRouter();
 
   return (
-    <section className="w-full flex justify-between">
+    <section className="w-full flex justify-between items-center">
       <motion.div className="flex flex-col gap-8"
         initial="hidden"
         animate="visible"
@@ -22,7 +24,7 @@ export const Presentation = () => {
         }}
       >
         <h1
-          className="text-8xl font-semibold font-degular text-presentation-title pt-28 max-2xl:text-7xl max-[1190px]:text-6xl max-lg:text-7xl max-md:text-center max-sm:text-6xl"
+          className="text-8xl font-semibold font-degular text-presentation-title pt-24 max-2xl:text-7xl max-[1190px]:text-6xl max-lg:text-7xl max-md:text-center max-sm:text-6xl"
         >
           Dimensi
           <Image src="/avatar-1.png" alt="" width={30} height={30} className="inline-block relative bottom-1 md:hidden"/>
@@ -48,20 +50,11 @@ export const Presentation = () => {
           <p className="underline text-title max-md:hidden">Nossas vantagens</p>
         </div>
 
-        <div className='flex gap-16 items-center mt-6  max-[1280px]:gap-4 max-[1120px]:flex-col max-[1120px]:items-start max-md:items-center'>
-          <p className='font-degular w-40 max-[1120px]:w-full max-md:text-center'>
-            Trusted by the world&#39;s biggest brands
-          </p>
-
-          <div className="flex items-center gap-6 max-lg:flex-wrap max-lg:justify-center">
-            <Image src="/logo/afterpay-logo.png" alt="" width={100} height={100}/>
-            <Image src="/logo/basecamp-logo.png" alt="" width={100} height={100}/>
-            <Image src="/logo/maze-logo.png" alt="" width={100} height={100}/>
-          </div>
-        </div>
+        <Clients/>
       </motion.div>
-      <Image unoptimized src="/presentation-image.png" width={680} height={982} alt=""
-      className="pt-14 absolute right-0 -z-10 max-[1350px]:scale-90 max-[1350px]:-right-8 max-[1190px]:scale-[.8] max-[1190px]:-right-[4.3rem] max-[1190px]:top-20 max-lg:hidden"/>
+      <InfoCards />
+      {/* <Image unoptimized src="/presentation-image.png" width={680} height={982} alt=""
+      className="pt-14 absolute right-0 -z-10 max-[1350px]:scale-90 max-[1350px]:-right-8 max-[1190px]:scale-[.8] max-[1190px]:-right-[4.3rem] max-[1190px]:top-20 max-lg:hidden"/> */}
     </section>
   )
 }

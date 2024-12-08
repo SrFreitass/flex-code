@@ -33,7 +33,7 @@ export const Carousel = () => {
 
     return (
         <div className="mt-6 flex flex-col items-center justify-start w-1/2  max-lg:hidden">
-            <Swiper 
+            <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
                 className="w-full max-h-[42rem] rounded-xl"
@@ -41,7 +41,7 @@ export const Carousel = () => {
                 {slides.map((slide, i) => (
                     <SwiperSlide key={i} className={`flex items-center justify-center`}>
                         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-xl" />
-                        <h2 className="absolute text-white bottom-10 font-degular text-4xl text-center px-20 flex justify-center">
+                        <h2 className="absolute text-white bottom-10 font-degular text-4xl text-center px-16 max-[1250px]:px-8 flex justify-center">
                         Empowering Innovation, Shaping the Future
                         </h2>
                         <Image src={slide} alt="" width={759} height={878} className="h-full rounded-xl object-cover max-h-[42rem]" />

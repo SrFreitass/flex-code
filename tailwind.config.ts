@@ -10,10 +10,10 @@ export default {
   ],
   theme: {
   	extend: {
-		gridTemplateColumns: {
-			'why-choose': 'repeat(2, minmax(19rem, 19rem))',
-			'why-choose-sm': 'repeat(1, minmax(18rem, 18rem))'
-		},
+  		gridTemplateColumns: {
+  			'why-choose': 'repeat(2, minmax(19rem, 19rem))',
+  			'why-choose-sm': 'repeat(1, minmax(18rem, 18rem))'
+  		},
 
   		colors: {
   			background: 'hsl(var(--background))',
@@ -23,9 +23,12 @@ export default {
   			'button-bg': 'var(--button-bg)',
   			'presentation-title': 'var(--presentation-title)',
   			title: 'var(--title)',
-			description: 'var(--description)',
-			'workflow-blue': 'var(--blue)',
-			'header-blue': 'var(--header-blue)',
+  			description: 'var(--description)',
+  			'workflow-blue': 'var(--blue)',
+  			'header-blue': 'var(--header-blue)',
+
+        'info-card': 'var(--info-card)',
+
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -69,9 +72,10 @@ export default {
   			manrope: 'var(--font-manrope)',
   			degular: 'var(--font-degular)',
   			'segoe-ui': 'var(--font-segoe-ui)',
-			'onest': 'var(--font-onest)',
-			'inter': 'var(--font-inter)',
-			'space-mono': 'var(--font-space-mono)',
+  			'onest': 'var(--font-onest)',
+  			'inter': 'var(--font-inter)',
+  			'space-mono': 'var(--font-space-mono)',
+        'outfit': 'var(--font-outfit)'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

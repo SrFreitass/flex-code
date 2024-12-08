@@ -18,7 +18,10 @@ export const TimelineItem: FC<TimelineItemProps> = ({ title, description, icon, 
             src={icon}
             width={20}
             height={20}
-            className={`group-hover:to-white-svg transition-colors`}
+            className={`
+              group-hover:to-white-svg
+              transition-colors`
+            }
           />
         </div>
         {/* <Circle
@@ -28,7 +31,7 @@ export const TimelineItem: FC<TimelineItemProps> = ({ title, description, icon, 
         /> */}
       </div>
       <div className="pb-8">
-        <h3 className={`font-medium transition-colors duration-300 group-hover:text-blue-500`}>
+        <h3 className={`font-medium font-degular text-xl transition-colors duration-300 group-hover:text-blue-500`}>
           {title}
         </h3>
         <p className="text-gray-600 mt-1">{description}</p>

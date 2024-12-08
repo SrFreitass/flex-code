@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fustat, Inter, Manrope, Onest, Space_Mono } from 'next/font/google';
+import { Fustat, Inter, Manrope, Onest, Outfit, Space_Mono } from 'next/font/google';
 import localFont from "next/font/local";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -8,6 +8,11 @@ import "./globals.css";
 const spaceMonoFont = Space_Mono({
   variable: "--font-space-mono",
   weight: ["400", "700"]
+})
+
+const outfitFont = Outfit({
+  variable: "--font-outfit",
+  weight: ["400", "500", "600", "700"]
 })
 
 const manropeFont = Manrope({
@@ -65,6 +70,7 @@ export default function RootLayout({
           ${fustatFont.variable}
           ${segoeUIFont.variable}
           ${spaceMonoFont.variable}
+          ${outfitFont.variable}
           antialiased
         `}
       >
