@@ -1,3 +1,5 @@
+"use client";
+
 import { AboutMore } from "./components/AboutMore";
 import { Clients } from "./components/Clients";
 import { Contact } from "./components/Contact";

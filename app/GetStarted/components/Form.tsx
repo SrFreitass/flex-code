@@ -3,8 +3,11 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MoveRight } from "lucide-react"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 export const Form = () => {
+    const router = useRouter();
+
     return(
         <form className="flex flex-col gap-14 w-1/2 max-lg:w-full">
             <div className="flex flex-col max-lg:items-center">
@@ -15,7 +18,7 @@ export const Form = () => {
                 <Input label="Your name" required />
                 <Input label="Your work email" type="email" required/>
                 <Textarea label="How can we help?" required/>
-                <Button className="flex items-center gap-2">
+                <Button className="flex items-center gap-2" onClick={() => router.push('/GetStarted')}>
                     Get Started
                     <MoveRight size={18}/>
                 </Button>

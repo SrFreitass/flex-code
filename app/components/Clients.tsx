@@ -1,5 +1,12 @@
 import Image from "next/image"
 
+const clientsLogo = [
+  "/logo/adobe-logo.svg",
+  "/logo/pinterest-logo.svg",
+  "/logo/motorola-logo.svg",
+  "/logo/motorola-logo.svg",
+]
+
 export const Clients = () => {
   return (
     <section id="clients" className="my-20 border-b border-header-border flex items-center justify-center gap-14 font-degular py-20 max-lg:flex-col max-lg:items-start max-lg:mt-8">
@@ -8,11 +15,11 @@ export const Clients = () => {
       </h2>
       <div className="flex items-center justify-start flex-wrap gap-10 w-80 max-lg:w-full">
         {
-          new Array(4).fill(0).map((_, i) => (
+          clientsLogo.map((logo, i) => (
             <Image
               key={i}
               alt="Company Logo"
-              src={"/logo/adobe-logo.svg"}
+              src={logo}
               width={128}
               height={128}
               className="transition-all grayscale-[80] hover:grayscale-0"

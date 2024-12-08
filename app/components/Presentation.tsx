@@ -1,10 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
+"use client";
+
+
 import * as motion from 'framer-motion/client';
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 import { Button } from "../../components/ui/button";
 
 export const Presentation = () => {
+  const router = useRouter();
+
   return (
     <section className="w-full flex justify-between">
       <motion.div className="flex flex-col gap-8"
@@ -26,7 +31,7 @@ export const Presentation = () => {
           <br />
           <div className="flex items-center gap-6 max-md:gap-0 max-md:block">
             <Image src="/avatar-2.png" alt="" width={36} height={36} className="inline-block relative bottom-2 md:hidden"/>
-            new <Image src="/avatars.png" alt="" className="mt-4 max-md:hidden" width={100} height={32} unoptimized/>
+            new <Image src="/avatars.png" alt="" className="mt-5 max-md:hidden" width={100} height={32} unoptimized/>
           </div>
           standard
           <Image src="/avatar-3.png" alt="" width={36} height={36} className="inline-block relative bottom-2 md:hidden"/>
@@ -36,7 +41,7 @@ export const Presentation = () => {
           Flex Code connects you with top-tier Brazilian software engineers
         </p>
         <div className="flex gap-8 items-center max-md:justify-center">
-          <Button className="font-semibold flex items-center gap-1">
+          <Button className="font-semibold flex items-center gap-1" onClick={() => router.push('/GetStarted')}>
             Get Started
             <MoveRight size={18}/>
           </Button>
