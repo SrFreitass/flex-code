@@ -69,12 +69,9 @@ export default {
   			}
   		},
   		fontFamily: {
-  			manrope: 'var(--font-manrope)',
   			degular: 'var(--font-degular)',
-  			'segoe-ui': 'var(--font-segoe-ui)',
   			'onest': 'var(--font-onest)',
   			'inter': 'var(--font-inter)',
-  			'space-mono': 'var(--font-space-mono)',
         'outfit': 'var(--font-outfit)'
   		},
   		borderRadius: {
