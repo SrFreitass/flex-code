@@ -23,11 +23,6 @@ interface TimelineProps {
 }
 
 export function Timeline({ progress }: TimelineProps) {
-  const getIsActive = (index: number) => {
-    const zoneSize = 90 / timelineItems.length;
-    const itemThreshold = (index * zoneSize) + 10;
-    return progress >= itemThreshold;
-  };
 
   return (
     <div className="mx-auto px-4 flex gap-8 max-lg:mx-0 max-lg:mt-6 max-lg:flex-col max-lg:gap-0">
@@ -37,8 +32,6 @@ export function Timeline({ progress }: TimelineProps) {
           key={index}
           title={item.title}
           description={item.description}
-          isActive={getIsActive(index)}
-          isLast={index === timelineItems.length - 1}
         />
       ))}
     </div>
