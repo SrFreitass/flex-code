@@ -3,12 +3,9 @@
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Button } from "../../components/ui/button";
 
 export const Header = () => {
-  const router = useRouter();
-
   return (
     <>
       <div className="bg-header-blue">
@@ -36,10 +33,12 @@ export const Header = () => {
               <li><a href="#clients">Clients</a></li>
               <li><a href="#support">Support</a></li>
             </ul>
-            <Button className="font-semibold flex items-center gap-1" onClick={() => router.push('/GetStarted')}>
-              Get Started
-              <MoveRight size={18}/>
-            </Button>
+            <Link href={"/get-started"}>
+              <Button className="font-semibold flex items-center gap-1">
+                Get Started
+                <MoveRight size={18}/>
+              </Button>
+            </Link>
           </nav>
           </div>
       </header>

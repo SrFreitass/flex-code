@@ -1,12 +1,25 @@
-import { ComponentProps, FC } from "react"
+import * as React from "react"
 
-type InputProps  = ComponentProps<'input'> & { label: string }
+import { cn } from "@/lib/utils"
 
-export const Input: FC<InputProps> = (props) => {
-  return (
-    <div className="flex flex-col font-inter w-full">
-      {props.label ? <label>{props.label}</label> : null}
-      <input {...props} className={`rounded-md border border-[#969696] bg-transparent p-2 w-full focus:outline-blue-500 ${props.className}`} />
-    </div>
-  )
-}
+const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input"> & { label: string }>(
+  ({ className, type, ...props }, ref) => {
+    return (
+      <div className="font-inter w-full">
+        <label className="block text-sm font-medium text-foreground">{props.label}</label>
+        <input
+          type={type}
+          className={cn(
+            "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+            className
+          )}
+          ref={ref}
+          {...props}
+        />
+      </div>
+    )
+  }
+)
+Input.displayName = "Input"
+
+export { Input }

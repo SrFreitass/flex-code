@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Scrollbar } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 export const AboutMore = () => {
   return (
@@ -24,12 +24,10 @@ export const AboutMore = () => {
         className="mt-[4.5rem] w-full max-lg:mt-6 max-lg:min-h-64"
       /> */}
     <Swiper
-      modules={[Scrollbar]}
+      modules={[Autoplay]}
       spaceBetween={50}
       slidesPerView={1}
-      scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      autoplay={{ delay: 5000 }}
       className='mt-[4.5rem] w-full max-h-[35rem] rounded-xl'
     >
       {

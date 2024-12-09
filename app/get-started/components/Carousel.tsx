@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Carousel = () => {
@@ -34,9 +35,11 @@ export const Carousel = () => {
     return (
         <div className="mt-6 flex flex-col items-center justify-start w-1/2  max-lg:hidden">
             <Swiper
+                modules={[Autoplay]}
                 spaceBetween={50}
                 slidesPerView={1}
-                className="w-full max-h-[42rem] rounded-xl"
+                autoplay={{ delay: 5000 }}
+                className="w-full h-full rounded-xl"
             >
                 {slides.map((slide, i) => (
                     <SwiperSlide key={i} className={`flex items-center justify-center`}>

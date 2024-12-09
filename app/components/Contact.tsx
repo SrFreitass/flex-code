@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export const Contact = () => {
   return (
@@ -11,9 +12,11 @@ export const Contact = () => {
             <br/>
             See how we can help.
           </h2>
-          <Button className="!bg-[#13926A] max-w-36">
-            Schedule a Call
-          </Button>
+          <Link href={"/get-started"}>
+            <Button className="!bg-[#13926A] max-w-36">
+              Schedule a Call
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

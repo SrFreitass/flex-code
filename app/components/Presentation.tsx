@@ -4,14 +4,12 @@
 import * as motion from 'framer-motion/client';
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { Button } from "../../components/ui/button";
 import { Clients } from './Clients';
 import { InfoCards } from './InfoCards';
 
 export const Presentation = () => {
-  const router = useRouter();
-
   return (
     <section>
       <motion.div className="flex justify-between w-full"
@@ -44,10 +42,12 @@ export const Presentation = () => {
             Flex Code connects you with top-tier Brazilian software engineers
           </p>
           <div className="flex gap-8 items-center max-md:justify-center">
-            <Button className="font-semibold flex items-center gap-1" onClick={() => router.push('/GetStarted')}>
-              Get Started
-              <MoveRight size={18}/>
-            </Button>
+            <Link href="/get-started">
+              <Button className="font-semibold flex items-center gap-1">
+                Get Started
+                <MoveRight size={18}/>
+              </Button>
+            </Link>
             <p className="underline text-title max-md:hidden">Nossas vantagens</p>
           </div>
 
