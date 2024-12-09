@@ -18,11 +18,7 @@ const timelineItems = [
   },
 ];
 
-interface TimelineProps {
-  progress: number;
-}
-
-export function Timeline({ progress }: TimelineProps) {
+export function Timeline() {
 
   return (
     <div className="mx-auto px-4 flex gap-8 max-lg:mx-0 max-lg:mt-6 max-lg:flex-col max-lg:gap-0">
