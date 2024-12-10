@@ -11,7 +11,7 @@ import { Workflow } from './components/Workflow';
 export default function Home() {
   return (
     <>
-    <div className="max-w-[1440px] m-auto px-16 max-[1250px]:px-8 max-sm:px-4">
+    <div className="max-w-[1440px] m-auto px-16 -mt-12 max-[1250px]:px-8 max-sm:px-4">
       <Presentation />
       <AboutMore/>
       <WhyChooseUs />

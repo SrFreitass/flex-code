@@ -11,7 +11,7 @@ type BenefitProps = {
 export const Benefit: FC<BenefitProps> = ({ title, titleBorder, description, icon }) => {
   return (
     <div className="px-6">
-      <div className={`flex items-center gap-1  border-[#20262A1F] pl-6 ${titleBorder ? 'border-x' : ''} max-lg:border-transparent`}>
+      <div className={`flex items-center gap-1  border-[#20262A1F] pl-6 ${titleBorder ? 'border-r' : ''} max-lg:border-transparent`}>
         <Image src={icon} alt="" width={20} height={20}/>
         <h3 className="font-degular font-medium text-xl">{title}</h3>
       </div>

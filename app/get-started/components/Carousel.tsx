@@ -39,7 +39,7 @@ export const Carousel = () => {
                 spaceBetween={50}
                 slidesPerView={1}
                 autoplay={{ delay: 5000 }}
-                className="w-[30rem] h-[40rem] rounded-xl"
+                className="w-[38rem] h-[40rem] rounded-xl"
             >
                 {slides.map((slide, i) => (
                     <SwiperSlide key={i} className={`flex items-center justify-center`}>

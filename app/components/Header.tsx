@@ -8,17 +8,17 @@ import { Button } from "../../components/ui/button";
 export const Header = () => {
   return (
     <>
-      <div className="bg-header-blue">
+      <div className="bg-header-blue font-inter">
         <p className="p-3 text-center max-[900px]:hidden text-white">
-          Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
+          Flex Code transforms ideas into digital reality!
           {' '}
-          <span className="text-[#FF6C37]">Read the report →</span>
+          {/* <span className="text-[#FF6C37]">Read the report →</span> */}
         </p>
         <div className="p-3 text-white min-[900px]:hidden overflow-hidden whitespace-nowrap">
           <div className="inline-block animate-marquee">
-            Discover key API trends from 5,600+ devs and API pros: Postman’s 2024 State of the API report is here!
+            Flex Code transforms ideas into digital reality!
             {' '}
-            <span className="text-[#FF6C37]">Read the report →</span>
+            {/* <span className="text-[#FF6C37]">Read the report →</span> */}
           </div>
         </div>
       </div>

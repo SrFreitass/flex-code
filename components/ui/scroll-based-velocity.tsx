@@ -1,13 +1,13 @@
 "use client";
 
 import {
-    motion,
-    useAnimationFrame,
-    useMotionValue,
-    useScroll,
-    useSpring,
-    useTransform,
-    useVelocity,
+  motion,
+  useAnimationFrame,
+  useMotionValue,
+  useScroll,
+  useSpring,
+  useTransform,
+  useVelocity,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -97,7 +97,7 @@ export function VelocityScroll({
         <motion.div className={cn("inline-block", className)} style={{ x }}>
           {Array.from({ length: repetitions }).map((_, i) => (
             <span key={i} ref={i === 0 ? textRef : null}>
-              {children}{' '}{' '}<span className="text-lg relative bottom-3 right-4">█</span>
+              {children}<span className="text-lg relative bottom-3 right-4">ㅤㅤ█</span>
             </span>
           ))}
         </motion.div>

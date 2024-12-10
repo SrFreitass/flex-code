@@ -12,6 +12,7 @@ import { InfoCards } from './InfoCards';
 export const Presentation = () => {
   return (
     <section>
+      {/* <DotPattern className='-z-10 ' width={48} height={48}/> */}
       <motion.div className="flex justify-between w-full"
         initial="hidden"
         animate="visible"
@@ -48,7 +49,7 @@ export const Presentation = () => {
                 <MoveRight size={18}/>
               </Button>
             </Link>
-            <p className="underline text-title max-md:hidden">Nossas vantagens</p>
+            <p className="underline text-title max-md:hidden">Our advantages</p>
           </div>
 
           <Clients/>

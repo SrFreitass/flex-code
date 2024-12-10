@@ -43,7 +43,7 @@ export const WhyChooseUs = () => {
       <div className="mt-20 grid grid-cols-3 gap-10 justify-center max-lg:grid-cols-why-choose max-sm:grid-cols-why-choose-sm">
         {
           benefits.map((benefit, i) => (
-            <Benefit key={i} {...benefit} titleBorder={i === 0 || i === 3}/>
+            <Benefit key={i} {...benefit} titleBorder={i === 1 || i === 4 || i === 0 || i === 3}/>
           ))
         }
       </div>
